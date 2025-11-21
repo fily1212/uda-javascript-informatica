@@ -2,173 +2,155 @@
 
 ## Struttura del Corso
 
-Il corso è diviso in 3 moduli progressivi che coprono JavaScript, TypeScript e React, con esercizi che collegano l'informatica ad altre discipline.
+Il corso è diviso in 3 moduli progressivi con **approccio learning by doing** e **esercizi progettuali**. Non tutti gli esercizi sono interdisciplinari: il focus è su JavaScript, TypeScript e React con collegamenti mirati ad altre discipline.
+
+**Totale: 70 esercizi**
+- JavaScript: 30 esercizi (15 UDA + 15 puri + alcuni progettuali)
+- TypeScript: 15 esercizi (8 UDA + 7 puri + alcuni progettuali)
+- React: 25 esercizi (12 UDA + 8 puri + 5 PROGETTI COMPLETI)
+
+**Materie collegate (35 esercizi interdisciplinari):**
+- Fisica: 10 esercizi
+- Italiano: 10 esercizi
+- Storia: 5 esercizi
+- TLC: 5 esercizi (circuiti, mezzi trasmissivi, sicurezza)
+- Diritto: 5 esercizi (costituzione, leggi, regolamenti)
 
 ---
 
-## MODULO 1: JAVASCRIPT BASE (30 esercizi)
+## MODULO 1: JAVASCRIPT (30 esercizi)
 
-### Sezione 1.1: Introduzione e Fondamenti (5 esercizi)
+### Sezione 1.1: Fondamenti (5 esercizi)
 
-**ES01 - Variabili e Tipi di Dati**
-- Concetto Informatico: `var`, `let`, `const` e tipi primitivi
-- Materia: Fisica
-- Argomento: Calcolo di grandezze fisiche (velocità, accelerazione, energia)
+**ES01 - Variabili e Tipi di Dati** [PURO]
+- Concetto: `var`, `let`, `const`, tipi primitivi
+- Esercizio: Dichiarare variabili di diversi tipi, operazioni base
 
-**ES02 - Operatori Aritmetici**
-- Concetto Informatico: Operatori matematici (+, -, *, /, %, **)
-- Materia: Fisica
-- Argomento: Leggi del moto (spazio, tempo, velocità)
+**ES02 - Operatori e Espressioni** [PURO]
+- Concetto: Operatori aritmetici, logici, di confronto
+- Esercizio: Costruire espressioni complesse, precedenza operatori
 
-**ES03 - Operatori di Confronto e Logici**
-- Concetto Informatico: ==, ===, !=, !==, &&, ||, !
-- Materia: Diritto
-- Argomento: Verifica requisiti per maggiore età e capacità di agire
+**ES03 - Template Literals e Stringhe** [UDA - Italiano]
+- Concetto: Template literals, interpolazione, metodi string
+- Esercizio: Formattare citazioni letterarie, analisi lunghezza parole
 
-**ES04 - Template Literals e String Interpolation**
-- Concetto Informatico: Backticks, interpolazione, multiline strings
-- Materia: Italiano
-- Argomento: Creazione di citazioni letterarie formattate
+**ES04 - Type Coercion e Conversioni** [UDA - TLC]
+- Concetto: Conversioni implicite/esplicite, casting
+- Esercizio: Convertitore unità digitali (bit → byte → KB → MB → GB)
 
-**ES05 - Type Coercion e Conversioni**
-- Concetto Informatico: Conversioni implicite ed esplicite tra tipi
-- Materia: TLC
-- Argomento: Conversione tra unità (bit, byte, KB, MB)
+**ES05 - Console e Debugging Base** [PURO]
+- Concetto: console.log, console.table, debugging base
+- Esercizio: Debug di codice con errori, uso console methods
 
 ### Sezione 1.2: Strutture di Controllo (5 esercizi)
 
-**ES06 - If/Else**
-- Concetto Informatico: Condizionali semplici e annidati
-- Materia: Storia
-- Argomento: Classificazione periodi storici in base all'anno
+**ES06 - If/Else e Condizionali** [UDA - Fisica]
+- Concetto: if/else, condizioni annidate, confronti
+- Esercizio: Classificatore tipo di moto (rettilineo, accelerato, circolare) in base a velocità/accelerazione
 
-**ES07 - Switch/Case**
-- Concetto Informatico: Selezione multipla
-- Materia: TLC
-- Argomento: Classificazione segnali in base alla frequenza (VLF, LF, HF, VHF, etc.)
+**ES07 - Switch/Case** [UDA - Storia]
+- Concetto: Switch, case, break, default
+- Esercizio: Identificare periodo storico e caratteristiche da anno inserito
 
-**ES08 - Operatore Ternario**
-- Concetto Informatico: Condizionale compatto
-- Materia: Diritto
-- Argomento: Verifica validità atti giuridici
+**ES08 - Operatore Ternario e Short-Circuit** [PURO]
+- Concetto: Ternario (? :), short-circuit (&&, ||)
+- Esercizio: Validazione input, valori di default con operatori
 
-**ES09 - Ciclo For**
-- Concetto Informatico: Iterazione con contatore
-- Materia: Fisica
-- Argomento: Calcolo traiettoria proiettile (posizioni successive)
+**ES09 - Ciclo For** [UDA - TLC]
+- Concetto: for loop, break, continue
+- Esercizio: Analisi spettro frequenze radio, identificazione bande (AM, FM, VHF, UHF)
 
-**ES10 - Ciclo While e Do-While**
-- Concetto Informatico: Iterazione con condizione
-- Materia: Storia
-- Argomento: Timeline eventi storici fino a una data limite
+**ES10 - While e Do-While** [PURO]
+- Concetto: while, do-while, loop infiniti
+- Esercizio: Algoritmi di ricerca, validazione input utente con retry
 
-### Sezione 1.3: Array e Collezioni (5 esercizi)
+### Sezione 1.3: Array e Metodi (6 esercizi)
 
-**ES11 - Array Base**
-- Concetto Informatico: Creazione, accesso, lunghezza
-- Materia: Italiano
-- Argomento: Analisi frequenza lettere in un testo
+**ES11 - Array Base e Metodi CRUD** [PURO]
+- Concetto: Array, indicizzazione, push/pop/shift/unshift, length
+- Esercizio: Gestione lista elementi, operazioni CRUD base
 
-**ES12 - Metodi Array Push, Pop, Shift, Unshift**
-- Concetto Informatico: Manipolazione array (aggiunta/rimozione)
-- Materia: Storia
-- Argomento: Gestione cronologia eventi (stack/queue)
+**ES12 - Iterazione Array** [UDA - Italiano]
+- Concetto: for, for...of, forEach
+- Esercizio: Analisi frequenza lettere in un testo, conteggio vocali/consonanti
 
-**ES13 - Ciclo For...of e For...in**
-- Concetto Informatico: Iterazione su array e oggetti
-- Materia: TLC
-- Argomento: Analisi lista frequenze radio assegnate
+**ES13 - Spread e Destructuring** [PURO]
+- Concetto: Spread operator [...], array destructuring
+- Esercizio: Clonazione, merge array, estrazione valori
 
-**ES14 - Spread Operator e Destructuring**
-- Concetto Informatico: Operatore spread [...] e destrutturazione
-- Materia: Fisica
-- Argomento: Scomposizione vettori in componenti
+**ES14 - Map, Filter, Find** [PURO]
+- Concetto: map, filter, find, findIndex, some, every
+- Esercizio: Trasformazione e filtraggio dati strutturati
 
-**ES15 - Array Methods: map, filter, reduce**
-- Concetto Informatico: Programmazione funzionale su array
-- Materia: Italiano
-- Argomento: Analisi testo (filtraggio parole, conteggio, trasformazione)
+**ES15 - Reduce e Metodi Avanzati** [UDA - Fisica]
+- Concetto: reduce, reduceRight, flat, flatMap
+- Esercizio: Calcolo somme vettoriali, media misurazioni fisiche
 
-### Sezione 1.4: Funzioni (5 esercizi)
+**ES16 - [PROGETTO] Sistema Gestione Biblioteca** [UDA - Italiano]
+- Concetto: Combinazione tutti metodi array
+- Progetto: Sistema CRUD per libri (ricerca, filtro per autore/genere, statistiche)
 
-**ES16 - Funzioni Base (Declaration e Expression)**
-- Concetto Informatico: function declaration vs function expression
-- Materia: Fisica
-- Argomento: Funzioni per calcoli cinematici
+### Sezione 1.4: Funzioni (6 esercizi)
 
-**ES17 - Arrow Functions**
-- Concetto Informatico: Sintassi compatta, this context
-- Materia: TLC
-- Argomento: Calcolo attenuazione segnale in base alla distanza
+**ES17 - Function Declaration e Expression** [PURO]
+- Concetto: function keyword, hoisting, differenze
+- Esercizio: Creare funzioni riutilizzabili, scope globale/locale
 
-**ES18 - Parametri Default e Rest Parameters**
-- Concetto Informatico: Valori di default, raccolta parametri (...)
-- Materia: Diritto
-- Argomento: Calcolo sanzioni con parametri opzionali
+**ES18 - Arrow Functions** [PURO]
+- Concetto: Sintassi arrow (=>), this context, implicit return
+- Esercizio: Refactoring da function a arrow, one-liner
 
-**ES19 - Callback Functions**
-- Concetto Informatico: Funzioni come parametri
-- Materia: Storia
-- Argomento: Filtraggio eventi storici con criteri personalizzati
+**ES19 - Parametri e Rest/Spread** [UDA - Diritto]
+- Concetto: Parametri default, rest parameters (...args)
+- Esercizio: Calcolatore sanzioni con parametri opzionali (circostanze attenuanti/aggravanti)
 
-**ES20 - Scope e Closures**
-- Concetto Informatico: Scope chain, closure, IIFE
-- Materia: Italiano
-- Argomento: Contatore parole con stato privato
+**ES20 - Callback e Higher-Order Functions** [PURO]
+- Concetto: Funzioni come parametri, HOF pattern
+- Esercizio: Implementare custom map/filter, callback personalizzati
 
-### Sezione 1.5: Oggetti e Strutture Dati (5 esercizi)
+**ES21 - Closures e Scope** [PURO]
+- Concetto: Scope chain, closures, IIFE, private variables
+- Esercizio: Counter con stato privato, factory functions
 
-**ES21 - Oggetti Base**
-- Concetto Informatico: Creazione oggetti, proprietà, metodi
-- Materia: Storia
-- Argomento: Modellazione personaggi storici con proprietà
+**ES22 - [PROGETTO] Calcolatore Fisico Avanzato** [UDA - Fisica]
+- Concetto: Applicazione completa di funzioni, closures, HOF
+- Progetto: Calcolatrice fisica (cinematica, dinamica, energia) con storico e validazione
 
-**ES22 - Object Methods e This**
-- Concetto Informatico: Metodi degli oggetti, contesto this
-- Materia: Fisica
-- Argomento: Oggetto particella con metodi per calcolare energia
+### Sezione 1.5: Oggetti (4 esercizi)
 
-**ES23 - Computed Properties e Object Shorthand**
-- Concetto Informatico: Proprietà calcolate, shorthand syntax
-- Materia: TLC
-- Argomento: Oggetti per configurazioni di rete dinamiche
+**ES23 - Oggetti Base e Metodi** [PURO]
+- Concetto: Creazione oggetti (literal, constructor), proprietà, metodi, this
+- Esercizio: Modellare entità complesse, object methods
 
-**ES24 - Object Destructuring e Spread**
-- Concetto Informatico: Destrutturazione oggetti, clonazione
-- Materia: Diritto
-- Argomento: Estrazione dati da documenti legali
+**ES24 - Object Destructuring e Spread** [UDA - TLC]
+- Concetto: Destructuring oggetti, spread {...}, shorthand syntax
+- Esercizio: Configuratore parametri rete (IP, subnet, gateway, DNS) con merge/override
 
-**ES25 - JSON.stringify e JSON.parse**
-- Concetto Informatico: Serializzazione e deserializzazione
-- Materia: Italiano
-- Argomento: Salvataggio e caricamento annotazioni letterarie
+**ES25 - Object Methods Avanzati** [PURO]
+- Concetto: Object.keys/values/entries, Object.assign, freeze/seal
+- Esercizio: Manipolazione oggetti, immutabilità, utility functions
 
-### Sezione 1.6: Programmazione Asincrona e Fetch (5 esercizi)
+**ES26 - [PROGETTO] Database Eventi Storici** [UDA - Storia]
+- Concetto: Combinazione oggetti, array, metodi
+- Progetto: Sistema gestione timeline storica (CRUD eventi, filtri per periodo/tipo, export JSON)
 
-**ES26 - setTimeout e setInterval**
-- Concetto Informatico: Timer e programmazione asincrona base
-- Materia: Fisica
-- Argomento: Simulazione moto con aggiornamenti temporizzati
+### Sezione 1.6: Asincrono e API (4 esercizi)
 
-**ES27 - Promises**
-- Concetto Informatico: Creazione e gestione promise (then, catch, finally)
-- Materia: Storia
-- Argomento: Caricamento asincrono database eventi storici
+**ES27 - Promises** [PURO]
+- Concetto: Promise creation, then/catch/finally, chaining
+- Esercizio: Simulare operazioni asincrone, gestione errori
 
-**ES28 - Async/Await**
-- Concetto Informatico: Sintassi sincrona per codice asincrono
-- Materia: TLC
-- Argomento: Simulazione richiesta dati da server remoto
+**ES28 - Async/Await** [PURO]
+- Concetto: async functions, await keyword, try/catch
+- Esercizio: Refactoring promises to async/await, error handling
 
-**ES29 - Fetch API Base**
-- Concetto Informatico: GET requests, response handling
-- Materia: Italiano
-- Argomento: Recupero citazioni da API letterarie
+**ES29 - Fetch API** [UDA - Italiano]
+- Concetto: fetch(), GET/POST requests, response handling, JSON
+- Esercizio: App citazioni letterarie da API pubblica (es. Quotable API)
 
-**ES30 - Fetch Avanzato**
-- Concetto Informatico: POST, headers, error handling
-- Materia: Diritto
-- Argomento: Invio e validazione documenti legali via API
+**ES30 - [PROGETTO FINALE] Ricerca Normative** [UDA - Diritto]
+- Concetto: Fetch, async/await, error handling, UI interattiva
+- Progetto: App ricerca articoli Costituzione/Codici con API, filtri, salvataggio preferiti
 
 ---
 
@@ -176,198 +158,185 @@ Il corso è diviso in 3 moduli progressivi che coprono JavaScript, TypeScript e 
 
 ### Sezione 2.1: Fondamenti TypeScript (5 esercizi)
 
-**ES31 - Setup e Tipi Base**
-- Concetto Informatico: Configurazione TS, tipi primitivi, type annotations
-- Materia: Fisica
-- Argomento: Variabili tipizzate per grandezze fisiche
+**ES31 - Setup TypeScript e Tipi Primitivi** [PURO]
+- Concetto: tsconfig.json, tipi base (string, number, boolean, any, unknown, never)
+- Esercizio: Configurare progetto TS, annotazioni di tipo base
 
-**ES32 - Union Types e Type Narrowing**
-- Concetto Informatico: Tipi multipli, type guards
-- Materia: Storia
-- Argomento: Eventi che possono essere date o stringhe
+**ES32 - Union, Intersection e Literal Types** [PURO]
+- Concetto: Union (|), intersection (&), literal types, type narrowing
+- Esercizio: Type guards, typeof, controllo flusso tipizzato
 
-**ES33 - Array e Tuple Types**
-- Concetto Informatico: Array tipizzati, tuple
-- Materia: TLC
-- Argomento: Array di frequenze e tuple per coordinate GPS
+**ES33 - Array e Tuple** [UDA - Fisica]
+- Concetto: Array tipizzati, tuple, readonly arrays
+- Esercizio: Vettori fisici tipizzati, coordinate [x, y, z] con tuple
 
-**ES34 - Type Aliases**
-- Concetto Informatico: Definizione tipi custom con type
-- Materia: Italiano
-- Argomento: Tipi per classificazione opere letterarie
+**ES34 - Type Aliases** [UDA - Italiano]
+- Concetto: type keyword, aliases complessi, composition
+- Esercizio: Modellare gerarchia opere letterarie (Libro, Poesia, Racconto)
 
-**ES35 - Literal Types e Const Assertions**
-- Concetto Informatico: Tipi letterali, as const
-- Materia: Diritto
-- Argomento: Stati processuali come literal types
+**ES35 - Enums** [UDA - Storia]
+- Concetto: Enum numerici e string, const enum
+- Esercizio: Periodi storici, classificazione eventi con enum
 
 ### Sezione 2.2: Interfacce e Oggetti (5 esercizi)
 
-**ES36 - Interfacce Base**
-- Concetto Informatico: interface, proprietà opzionali, readonly
-- Materia: Fisica
-- Argomento: Interface per particelle con proprietà obbligatorie/opzionali
+**ES36 - Interfacce Base** [PURO]
+- Concetto: interface, proprietà opzionali (?), readonly, extends
+- Esercizio: Modellare entità con interfacce, ereditarietà
 
-**ES37 - Extending Interfaces**
-- Concetto Informatico: Ereditarietà interfacce
-- Materia: Storia
-- Argomento: Gerarchia di eventi storici (EventoBase -> GuerraMondiale)
+**ES37 - Interfaces vs Type** [UDA - TLC]
+- Concetto: Differenze interface/type, quando usare uno o l'altro
+- Esercizio: Modellare protocolli rete (TCP, UDP) e loro proprietà
 
-**ES38 - Interfaces vs Type Aliases**
-- Concetto Informatico: Differenze e casi d'uso
-- Materia: TLC
-- Argomento: Modellazione protocolli di comunicazione
+**ES38 - Function Types** [PURO]
+- Concetto: Tipizzazione funzioni, parametri opzionali, overloading
+- Esercizio: Signature complesse, callback tipizzati
 
-**ES39 - Function Types**
-- Concetto Informatico: Tipizzazione funzioni, parametri opzionali
-- Materia: Italiano
-- Argomento: Funzioni per analisi testuale tipizzate
+**ES39 - Index Signatures e Mapped Types** [PURO]
+- Concetto: Index signatures [key: string], mapped types
+- Esercizio: Dizionari dinamici tipizzati
 
-**ES40 - Index Signatures**
-- Concetto Informatico: Proprietà dinamiche negli oggetti
-- Materia: Diritto
-- Argomento: Dizionario leggi con chiavi dinamiche
+**ES40 - [PROGETTO] Sistema Particelle Fisiche** [UDA - Fisica]
+- Concetto: Interfacce complesse, ereditarietà, composizione
+- Progetto: Modellare sistema particelle (Elettrone, Protone, Neutrone) con calcoli
 
-### Sezione 2.3: Generics e Tipi Avanzati (5 esercizi)
+### Sezione 2.3: Generics e Progetti (5 esercizi)
 
-**ES41 - Generics Base**
-- Concetto Informatico: Funzioni e classi generiche
-- Materia: Fisica
-- Argomento: Funzione generica per calcoli su diverse grandezze
+**ES41 - Generics Base** [PURO]
+- Concetto: Funzioni generiche, <T>, constraints con extends
+- Esercizio: Utility functions generiche (identity, getFirst, swap)
 
-**ES42 - Generic Constraints**
-- Concetto Informatico: Vincoli sui tipi generici (extends)
-- Materia: Storia
-- Argomento: Funzioni generiche per entità storiche con proprietà comuni
+**ES42 - Generic Classes e Interfaces** [PURO]
+- Concetto: Classi generiche, interfacce generiche
+- Esercizio: Implementare Stack<T>, Queue<T> tipizzate
 
-**ES43 - Utility Types**
-- Concetto Informatico: Partial, Required, Pick, Omit, Record
-- Materia: TLC
-- Argomento: Configurazioni di rete con utility types
+**ES43 - Utility Types** [UDA - Diritto]
+- Concetto: Partial, Required, Pick, Omit, Record, Readonly
+- Esercizio: Gestione documenti legali con utility types (bozze, definitivi, pubblici)
 
-**ES44 - Enum**
-- Concetto Informatico: Enumerazioni numeriche e string
-- Materia: Italiano
-- Argomento: Classificazione generi letterari
+**ES44 - [PROGETTO] Analizzatore Testi Letterari** [UDA - Italiano]
+- Concetto: Generics, utility types, interfacce complesse
+- Progetto: Analyzer per testi (frequenza parole, sentiment, statistiche) completamente tipizzato
 
-**ES45 - Type Guards Custom**
-- Concetto Informatico: is keyword, user-defined type guards
-- Materia: Diritto
-- Argomento: Validazione tipi di contratti
+**ES45 - [PROGETTO FINALE TS] Simulatore Circuiti** [UDA - Fisica]
+- Concetto: TypeScript avanzato completo, OOP
+- Progetto: Simulatore circuiti elettrici (resistenze serie/parallelo, legge Ohm) con validazione tipi
 
 ---
 
-## MODULO 3: REACT CON VITE (20 esercizi)
+## MODULO 3: REACT CON VITE (25 esercizi)
 
-### Sezione 3.1: Setup e Componenti Base (4 esercizi)
+### Sezione 3.1: Setup e Componenti (5 esercizi)
 
-**ES46 - Setup Progetto con Vite**
-- Concetto Informatico: Vite setup, struttura progetto, TSX
-- Materia: Fisica
-- Argomento: App per calcolo grandezze fisiche
+**ES46 - Setup Vite + React + TypeScript** [PURO]
+- Concetto: Vite setup, struttura progetto, TSX, componenti base
+- Esercizio: Creare primo progetto React con Vite, componente Hello World
 
-**ES47 - Componenti Funzionali e JSX**
-- Concetto Informatico: Componenti, sintassi JSX, espressioni
-- Materia: Italiano
-- Argomento: Componente per visualizzare citazione letteraria
+**ES47 - JSX e Rendering** [PURO]
+- Concetto: JSX syntax, espressioni {}, rendering condizionale, liste
+- Esercizio: Componenti con logica condizionale e rendering liste
 
-**ES48 - Props e PropTypes**
-- Concetto Informatico: Passaggio dati tra componenti
-- Materia: Storia
-- Argomento: Componente EventoStorico con props tipizzate
+**ES48 - Props e TypeScript** [UDA - Italiano]
+- Concetto: Props, tipizzazione props, children
+- Esercizio: Componente Card per citazioni letterarie con props tipizzate
 
-**ES49 - Children e Composition**
-- Concetto Informatico: Props.children, composizione componenti
-- Materia: TLC
-- Argomento: Layout componenti per schema rete
+**ES49 - Composition e Children** [PURO]
+- Concetto: Composizione componenti, props.children, pattern container/presentational
+- Esercizio: Layout components (Container, Card, Modal)
+
+**ES50 - Styling in React** [PURO]
+- Concetto: CSS modules, inline styles, conditional classNames
+- Esercizio: Stilizzare componenti, temi e varianti
 
 ### Sezione 3.2: State e Interattività (5 esercizi)
 
-**ES50 - useState Hook**
-- Concetto Informatico: State management, useState, re-rendering
-- Materia: Fisica
-- Argomento: Contatore per simulazione particelle
+**ES51 - useState Hook** [UDA - Fisica]
+- Concetto: useState, state management, re-rendering
+- Esercizio: Contatore particelle, incremento/decremento con visualizzazione
 
-**ES51 - Eventi e Event Handlers**
-- Concetto Informatico: onClick, onChange, onSubmit
-- Materia: Diritto
-- Argomento: Form per inserimento dati contratto
+**ES52 - Eventi e Handlers** [PURO]
+- Concetto: onClick, onChange, onSubmit, event handling
+- Esercizio: Form interattivi, gestione eventi, validazione base
 
-**ES52 - State con Oggetti e Array**
-- Concetto Informatico: Immutabilità, spread operator in state
-- Materia: Storia
-- Argomento: Lista eventi storici con aggiunte/rimozioni
+**ES53 - State con Oggetti e Array** [UDA - Storia]
+- Concetto: Immutabilità, spread operator, gestione state complessi
+- Esercizio: Lista timeline eventi storici (aggiungi, rimuovi, modifica)
 
-**ES53 - Lifting State Up**
-- Concetto Informatico: Condivisione state tra componenti
-- Materia: Italiano
-- Argomento: App analisi testo con componenti coordinati
+**ES54 - Lifting State Up** [PURO]
+- Concetto: Sollevare state, comunicazione tra componenti sibling
+- Esercizio: Componenti che condividono e modificano state comune
 
-**ES54 - Controlled Components e Forms**
-- Concetto Informatico: Input controllati, form handling
-- Materia: TLC
-- Argomento: Form configurazione parametri trasmissione
+**ES55 - Forms Controllati** [UDA - Diritto]
+- Concetto: Controlled inputs, form state, validazione
+- Esercizio: Form inserimento dati contratto con validazione campi obbligatori
 
 ### Sezione 3.3: Effects e Side Effects (3 esercizi)
 
-**ES55 - useEffect Base**
-- Concetto Informatico: Lifecycle, effect cleanup, dependency array
-- Materia: Fisica
-- Argomento: Timer per aggiornamento simulazione moto
+**ES56 - useEffect Base** [UDA - Fisica]
+- Concetto: useEffect, dependency array, lifecycle, cleanup
+- Esercizio: Timer per simulazione moto, aggiornamenti posizione ogni tick
 
-**ES56 - useEffect con Fetch**
-- Concetto Informatico: Data fetching, loading states, error handling
-- Materia: Storia
-- Argomento: Caricamento eventi storici da API
+**ES57 - Data Fetching con useEffect** [UDA - Italiano]
+- Concetto: Fetch in useEffect, loading/error states, abort controller
+- Esercizio: Caricare citazioni letterarie da API, gestire stati
 
-**ES57 - useEffect Cleanup**
-- Concetto Informatico: Cleanup function, memory leaks prevention
-- Materia: TLC
-- Argomento: Monitoraggio stato connessione con cleanup
+**ES58 - useEffect Cleanup e Ottimizzazione** [UDA - TLC]
+- Concetto: Cleanup functions, memory leaks, dependencies
+- Esercizio: Monitoraggio stato rete/connessione con cleanup corretto
 
 ### Sezione 3.4: Hooks Avanzati (4 esercizi)
 
-**ES58 - useContext**
-- Concetto Informatico: Context API, provider/consumer pattern
-- Materia: Italiano
-- Argomento: Theme context per app letteraria
+**ES59 - useContext** [PURO]
+- Concetto: Context API, createContext, Provider, useContext
+- Esercizio: Theme context (dark/light mode), global state semplice
 
-**ES59 - useReducer**
-- Concetto Informatico: Complex state logic, reducer pattern
-- Materia: Diritto
-- Argomento: Gestione stato pratica legale complessa
+**ES60 - useReducer** [UDA - Storia]
+- Concetto: useReducer, actions, reducer pattern, complex state
+- Esercizio: Gestione complessa timeline eventi storici con azioni multiple
 
-**ES60 - Custom Hooks**
-- Concetto Informatico: Riutilizzo logica, custom hooks pattern
-- Materia: Fisica
-- Argomento: Hook personalizzato per calcoli fisici
+**ES61 - Custom Hooks** [UDA - Fisica]
+- Concetto: Creare custom hooks, riutilizzo logica, composition
+- Esercizio: usePhysicsCalculator hook per calcoli ripetuti
 
-**ES61 - useMemo e useCallback**
-- Concetto Informatico: Performance optimization, memoization
-- Materia: Storia
-- Argomento: Ottimizzazione ricerca in database eventi storici
+**ES62 - useMemo e useCallback** [PURO]
+- Concetto: Performance optimization, memoization, re-rendering control
+- Esercizio: Ottimizzare componenti pesanti, evitare render inutili
 
-### Sezione 3.5: Routing e Architettura (4 esercizi)
+### Sezione 3.5: Routing (3 esercizi)
 
-**ES62 - React Router Setup**
-- Concetto Informatico: SPA routing, BrowserRouter, Routes, Route
-- Materia: TLC
-- Argomento: App multi-pagina per protocolli di rete
+**ES63 - React Router Setup e Navigazione** [PURO]
+- Concetto: React Router, BrowserRouter, Routes, Route, Link, NavLink
+- Esercizio: App multi-pagina con navigazione, rotte base
 
-**ES63 - Link e Navigation**
-- Concetto Informatico: Link component, useNavigate, parametri URL
-- Materia: Italiano
-- Argomento: Navigazione tra autori e opere letterarie
+**ES64 - Dynamic Routes e Params** [UDA - Italiano]
+- Concetto: useParams, route parameters, nested routes
+- Esercizio: App biblioteca (lista autori → dettaglio autore → lista opere)
 
-**ES64 - Dynamic Routes e useParams**
-- Concetto Informatico: Route parameters, dynamic segments
-- Materia: Storia
-- Argomento: Dettaglio evento storico con ID dinamico
+**ES65 - Layout e Protected Routes** [PURO]
+- Concetto: Layout routes, Outlet, route guards, redirect
+- Esercizio: App con layout condiviso e sezioni protette
 
-**ES65 - Layout e Protected Routes**
-- Concetto Informatico: Layout components, route guards
-- Materia: Diritto
-- Argomento: Sezioni protette per documenti riservati
+### Sezione 3.6: PROGETTI COMPLETI (5 esercizi)
+
+**ES66 - [PROGETTO] Simulatore Moto Fisico Interattivo** [UDA - Fisica]
+- Tecnologie: React + TS, useState, useEffect, custom hooks
+- Progetto: Simulatore moto uniformemente accelerato con grafici, controlli, animazione real-time
+
+**ES67 - [PROGETTO] Archivio Letterario con API** [UDA - Italiano]
+- Tecnologie: React + TS, useEffect, fetch, Context API, Router
+- Progetto: App completa per ricerca opere letterarie, preferiti, note personali, routing
+
+**ES68 - [PROGETTO] Task Manager Avanzato** [PURO]
+- Tecnologie: React + TS, Context + useReducer, localStorage, drag&drop
+- Progetto: Gestione task complessa (categorie, priorità, scadenze, filtri, statistiche)
+
+**ES69 - [PROGETTO] Consulente Normativo** [UDA - Diritto]
+- Tecnologie: React + TS, Router, Forms avanzati, validazione Zod
+- Progetto: App per consultare Costituzione/Codici, ricerca full-text, segnalibri, note
+
+**ES70 - [PROGETTO FINALE] Dashboard Multi-Tool** [PURO]
+- Tecnologie: React + TS completo, tutti gli hooks, routing, charts, testing
+- Progetto: Dashboard con tools vari (calcolatrice scientifica, converter unità, timer pomodoro, note)
 
 ---
 
@@ -384,7 +353,6 @@ uda-javascript-informatica/
 │   │   │   ├── README.md
 │   │   │   ├── esercizio.js
 │   │   │   └── soluzione.js
-│   │   ├── es02-operatori-aritmetici/
 │   │   └── ...
 │   ├── sezione-1.2-controllo/
 │   ├── sezione-1.3-array/
@@ -393,51 +361,100 @@ uda-javascript-informatica/
 │   └── sezione-1.6-asincrono/
 ├── modulo-2-typescript/
 │   ├── README.md
+│   ├── tsconfig.json
+│   ├── package.json
 │   ├── sezione-2.1-fondamenti/
 │   ├── sezione-2.2-interfacce/
 │   └── sezione-2.3-generics/
 └── modulo-3-react/
     ├── README.md
     ├── sezione-3.1-setup/
+    │   ├── es46-vite-setup/
+    │   │   ├── README.md
+    │   │   └── [progetto vite]
     ├── sezione-3.2-state/
     ├── sezione-3.3-effects/
     ├── sezione-3.4-hooks-avanzati/
-    └── sezione-3.5-routing/
+    ├── sezione-3.5-routing/
+    └── sezione-3.6-progetti/
+        ├── es66-simulatore-fisica/
+        ├── es67-archivio-letterario/
+        ├── es68-task-manager/
+        ├── es69-consulente-normativo/
+        └── es70-dashboard-multitools/
 ```
 
 ---
 
-## Statistiche Piano
+## Statistiche Piano Revisionato
 
-- **Totale esercizi**: 65
+### Totali
+- **Totale esercizi**: 70
   - JavaScript: 30 esercizi
   - TypeScript: 15 esercizi
-  - React: 20 esercizi
+  - React: 25 esercizi
 
-- **Distribuzione materie**:
-  - Fisica: ~22 esercizi (33%)
-  - Storia: ~13 esercizi (20%)
-  - TLC: ~13 esercizi (20%)
-  - Italiano: ~11 esercizi (17%)
-  - Diritto: ~10 esercizi (15%)
+### Distribuzione UDA vs Puri
+- **JavaScript**: 14 UDA + 16 puri (4 progettuali)
+- **TypeScript**: 8 UDA + 7 puri (3 progettuali)
+- **React**: 13 UDA + 12 puri (5 progetti finali)
+- **Totale UDA interdisciplinari**: 35/70 (50%)
 
-- **Progressione didattica**:
-  1. Fondamenti programmazione imperativa
-  2. Programmazione funzionale e asincrona
-  3. Type safety e programmazione tipizzata
-  4. Component-based architecture e SPA
+### Distribuzione Materie (35 esercizi UDA)
+- **Fisica**: 10 esercizi (circuiti, moto, grandezze fisiche)
+  - JavaScript: 3 | TypeScript: 3 | React: 4
+- **Italiano**: 10 esercizi (analisi testi, opere letterarie)
+  - JavaScript: 4 | TypeScript: 2 | React: 4
+- **Storia**: 5 esercizi (timeline, eventi, periodi)
+  - JavaScript: 2 | TypeScript: 1 | React: 2
+- **TLC**: 5 esercizi (reti, sicurezza, mezzi trasmissivi)
+  - JavaScript: 3 | TypeScript: 1 | React: 1
+- **Diritto**: 5 esercizi (costituzione, normative, contratti)
+  - JavaScript: 2 | TypeScript: 1 | React: 2
+
+### Esercizi Progettuali (12 totali)
+- **JavaScript**: ES16, ES22, ES26, ES30 (4 progetti)
+- **TypeScript**: ES40, ES44, ES45 (3 progetti)
+- **React**: ES66, ES67, ES68, ES69, ES70 (5 progetti completi)
+
+### Progressione Didattica
+1. **JavaScript (30)**: Fondamenti → Controllo flusso → Array → Funzioni → Oggetti → Asincrono
+2. **TypeScript (15)**: Tipi base → Interfacce → Generics → Progetti tipizzati
+3. **React (25)**: Componenti → State → Effects → Hooks avanzati → Routing → Progetti completi
 
 ---
 
-## Note Metodologiche
+## Approccio Metodologico
 
-Ogni esercizio seguirà questa struttura nel file README.md:
+### Learning by Doing
+- Focus su esercizi pratici e progettuali
+- Progressione incrementale della complessità
+- Progetti finali che integrano tutte le competenze
 
-1. **Obiettivi Informatici**: Concetti tecnici da apprendere
-2. **Connessione Interdisciplinare**: Argomento della materia collegata
-3. **Teoria**: Spiegazione sintassi e concetti
-4. **Esempio Guidato**: Codice commentato passo-passo
-5. **Esercizio Proposto**: Problema da risolvere autonomamente
-6. **Soluzione Commentata**: File separato con soluzione dettagliata
-7. **Approfondimenti**: Risorse e collegamenti ad altri esercizi
-8. **Quiz di Verifica**: Domande per testare la comprensione
+### Struttura Esercizio Standard (README.md)
+
+**Per esercizi PURI (solo informatica):**
+1. **Obiettivi**: Concetti tecnici da apprendere
+2. **Teoria**: Spiegazione sintassi e concetti
+3. **Esempio Guidato**: Codice commentato step-by-step
+4. **Esercizio**: Problema da risolvere autonomamente
+5. **Soluzione**: File separato con soluzione commentata
+6. **Sfida Extra**: Estensioni opzionali
+
+**Per esercizi UDA (interdisciplinari):**
+1. **Obiettivi Informatici**: Concetti tecnici
+2. **Connessione Disciplinare**: Materia e argomento collegato
+3. **Teoria Integrata**: Informatica + materia collegata
+4. **Esempio Guidato**: Applicazione pratica
+5. **Esercizio**: Problema interdisciplinare
+6. **Soluzione**: Commentata con riferimenti a entrambe le discipline
+7. **Approfondimenti**: Collegamenti e risorse
+
+**Per esercizi PROGETTUALI:**
+1. **Obiettivi del Progetto**: Scope e requisiti
+2. **Tecnologie**: Stack utilizzato
+3. **Architettura**: Struttura e organizzazione
+4. **User Stories**: Funzionalità da implementare
+5. **Guida Implementazione**: Step incrementali
+6. **Testing**: Casi di test
+7. **Estensioni**: Idee per miglioramenti

@@ -1,79 +1,154 @@
-# ES21 - Closures e Scope
+# ES21 - Scope e Closures (Base)
 
-## 📘 Tipo: PURO
+## 📘 Tipo: PURO (Informatica)
 
 ## 🎯 Obiettivi
-- Comprendere scope chain
-- Padroneggiare closures
-- Creare variabili private
-- Usare IIFE pattern
+- Comprendere scope locale vs globale
+- Usare closures semplici
+- Creare contatori con stato privato
 
 ## 📚 Teoria
-**Scope**: Visibilità variabili
-```javascript
-let globale = "visibile ovunque";
 
-function esterna() {
-  let locale = "solo qui";
-  
-  function interna() {
-    console.log(globale);  // OK
-    console.log(locale);   // OK - closure!
-  }
+### Scope - Visibilità Variabili
+
+```javascript
+// Variabile globale
+let globale = "Visibile ovunque";
+
+function funzione1() {
+  // Variabile locale
+  let locale = "Solo qui dentro";
+  console.log(globale);  // ✅ OK
+  console.log(locale);    // ✅ OK
 }
+
+function funzione2() {
+  console.log(globale);  // ✅ OK
+  // console.log(locale);   // ❌ Errore! locale non esiste qui
+}
+
+console.log(globale);  // ✅ OK
+// console.log(locale);   // ❌ Errore! locale non esiste qui
 ```
 
-**Closure**: Funzione che "ricorda" scope
+### Closures - Funzioni che "Ricordano"
+
+Una closure è una funzione che ricorda le variabili del suo ambiente, anche dopo che la funzione esterna è terminata.
+
 ```javascript
 function creaContatore() {
-  let count = 0;  // privata
+  let count = 0;  // Variabile privata
   
-  return {
-    incrementa: () => ++count,
-    valore: () => count
+  return function() {
+    count++;  // Può accedere a count!
+    return count;
   };
 }
 
-const contatore = creaContatore();
-contatore.incrementa();  // 1
-contatore.valore();      // 1
+const mioContatore = creaContatore();
+console.log(mioContatore());  // 1
+console.log(mioContatore());  // 2
+console.log(mioContatore());  // 3
 ```
 
-**IIFE**: Immediately Invoked Function Expression
+## 💡 Esempio Guidato - Counter Multipli
+
 ```javascript
-(function() {
-  let privato = "non accessibile";
-  // codice...
-})();
+function creaContatore(nome, valoreIniziale = 0) {
+  let valore = valoreIniziale;
+  
+  return {
+    incrementa: function() {
+      valore++;
+      console.log(`${nome}: ${valore}`);
+      return valore;
+    },
+    decrementa: function() {
+      valore--;
+      console.log(`${nome}: ${valore}`);
+      return valore;
+    },
+    vedi: function() {
+      return valore;
+    }
+  };
+}
+
+// Crea due contatori separati
+const contatoreVisite = creaContatore("Visite", 0);
+const contatoreLike = creaContatore("Like", 10);
+
+contatoreVisite.incrementa();  // Visite: 1
+contatoreVisite.incrementa();  // Visite: 2
+contatoreLike.incrementa();    // Like: 11
+contatoreLike.incrementa();    // Like: 12
+
+console.log(contatoreVisite.vedi());  // 2
+console.log(contatoreLike.vedi());     // 12
 ```
 
 ## ✏️ Esercizio
-1. Crea counter con stato privato
-2. Factory function per oggetti con dati privati
-3. Module pattern con IIFE
-4. Contatore parole che mantiene storico
 
+### Parte 1: Scope
+1. Crea una variabile globale `appName = "MyApp"`
+2. Funzione che usa variabile globale e una locale
+3. Testa che locale non è accessibile fuori
+
+### Parte 2: Contatori Semplici
+Crea `creaContatoreSemplice()` che restituisce oggetto con:
+- `incrementa()` - aggiunge 1
+- `decrementa()` - toglie 1
+- `reset()` - rimette a 0
+- `valore()` - mostra valore attuale
+
+### Parte 3: Salvadanaio
 ```javascript
-const wordCounter = (function() {
-  let history = [];
+function creaSalvadanaio() {
+  let saldo = 0;
   
   return {
-    count(text) {
-      const count = text.split(' ').length;
-      history.push(count);
-      return count;
+    deposita(importo) {
+      saldo += importo;
+      console.log(`Depositato: €${importo}. Saldo: €${saldo}`);
     },
-    getHistory() {
-      return [...history];
+    preleva(importo) {
+      if (importo > saldo) {
+        console.log("Fondi insufficienti!");
+      } else {
+        saldo -= importo;
+        console.log(`Prelevato: €${importo}. Saldo: €${saldo}`);
+      }
+    },
+    getSaldo() {
+      return saldo;
     }
   };
-})();
+}
+
+// Test
+const mioSalvadanaio = creaSalvadanaio();
+mioSalvadanaio.deposita(50);   // Depositato: €50. Saldo: €50
+mioSalvadanaio.deposita(30);   // Depositato: €30. Saldo: €80
+mioSalvadanaio.preleva(20);    // Prelevato: €20. Saldo: €60
+mioSalvadanaio.preleva(100);   // Fondi insufficienti!
+console.log(mioSalvadanaio.getSaldo());  // 60
 ```
 
-## 💡 Suggerimenti
-- Closure = funzione + ambiente lessicale
-- Utile per encapsulation
-- IIFE crea scope isolato
-- Pattern module con closure
+### Parte 4: Carrello Spesa
+Crea `creaCarrello()` con:
+- Array privato `prodotti = []`
+- `aggiungi(prodotto, prezzo)` - aggiunge al carrello
+- `rimuovi(prodotto)` - rimuove dal carrello
+- `totale()` - calcola somma prezzi
+- `lista()` - mostra tutti i prodotti
 
-## ➡️ Prossimo: ES22 - Progetto Calcolatore Fisica
+## 💡 Suggerimenti
+- Le closures sono utili per "nascondere" dati
+- La variabile interna non è accessibile dall'esterno
+- Ogni chiamata a creaContatore() crea uno scope separato
+- Usa `let` per variabili private
+
+## 🚀 Sfida Extra
+Crea un sistema di autenticazione con password privata usando closures
+
+## ➡️ Prossimo: ES22 - [PROGETTO] Calcolatore Fisico

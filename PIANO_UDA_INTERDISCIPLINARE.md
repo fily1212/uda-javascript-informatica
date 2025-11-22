@@ -5,15 +5,15 @@
 Il corso è diviso in 3 moduli progressivi con **approccio learning by doing** e **esercizi progettuali**. Non tutti gli esercizi sono interdisciplinari: il focus è su JavaScript, TypeScript e React con collegamenti mirati ad altre discipline.
 
 **Totale: 70 esercizi**
-- JavaScript: 30 esercizi (15 UDA + 15 puri + alcuni progettuali)
-- TypeScript: 15 esercizi (8 UDA + 7 puri + alcuni progettuali)
-- React: 25 esercizi (12 UDA + 8 puri + 5 PROGETTI COMPLETI)
+- JavaScript: 30 esercizi (14 UDA + 16 puri + 4 progettuali)
+- TypeScript: 15 esercizi (8 UDA + 7 puri + 3 progettuali)
+- React: 25 esercizi (12 UDA + 13 puri + 5 PROGETTI COMPLETI)
 
-**Materie collegate (35 esercizi interdisciplinari):**
-- Fisica: 10 esercizi
+**Materie collegate (34 esercizi interdisciplinari):**
+- Fisica: 9 esercizi
 - Italiano: 10 esercizi
 - Storia: 5 esercizi
-- TLC: 5 esercizi (circuiti, mezzi trasmissivi, sicurezza)
+- TLC: 5 esercizi (reti, mezzi trasmissivi, sicurezza)
 - Diritto: 5 esercizi (costituzione, leggi, regolamenti)
 
 ---
@@ -318,9 +318,9 @@ Il corso è diviso in 3 moduli progressivi con **approccio learning by doing** e
 
 ### Sezione 3.6: PROGETTI COMPLETI (5 esercizi)
 
-**ES66 - [PROGETTO] Simulatore Moto Fisico Interattivo** [UDA - Fisica]
-- Tecnologie: React + TS, useState, useEffect, custom hooks
-- Progetto: Simulatore moto uniformemente accelerato con grafici, controlli, animazione real-time
+**ES66 - [PROGETTO] Weather Dashboard** [PURO]
+- Tecnologie: React + TS, useState, useEffect, fetch API, charts
+- Progetto: Dashboard meteo completo con API (OpenWeatherMap), previsioni 5 giorni, grafici temperatura/umidità, geolocalizzazione, ricerca città, preferiti
 
 **ES67 - [PROGETTO] Archivio Letterario con API** [UDA - Italiano]
 - Tecnologie: React + TS, useEffect, fetch, Context API, Router
@@ -334,9 +334,9 @@ Il corso è diviso in 3 moduli progressivi con **approccio learning by doing** e
 - Tecnologie: React + TS, Router, Forms avanzati, validazione Zod
 - Progetto: App per consultare Costituzione/Codici, ricerca full-text, segnalibri, note
 
-**ES70 - [PROGETTO FINALE] Dashboard Multi-Tool** [PURO]
-- Tecnologie: React + TS completo, tutti gli hooks, routing, charts, testing
-- Progetto: Dashboard con tools vari (calcolatrice scientifica, converter unità, timer pomodoro, note)
+**ES70 - [PROGETTO FINALE] Pomodoro Productivity Suite** [PURO]
+- Tecnologie: React + TS completo, tutti gli hooks, audio API, notifiche, charts
+- Progetto: Timer Pomodoro avanzato con task integrati, statistiche produttività, pause automatiche, suoni personalizzabili, grafici settimanali/mensili, export dati
 
 ---
 
@@ -377,11 +377,11 @@ uda-javascript-informatica/
     ├── sezione-3.4-hooks-avanzati/
     ├── sezione-3.5-routing/
     └── sezione-3.6-progetti/
-        ├── es66-simulatore-fisica/
+        ├── es66-weather-dashboard/
         ├── es67-archivio-letterario/
         ├── es68-task-manager/
         ├── es69-consulente-normativo/
-        └── es70-dashboard-multitools/
+        └── es70-pomodoro-suite/
 ```
 
 ---
@@ -397,12 +397,12 @@ uda-javascript-informatica/
 ### Distribuzione UDA vs Puri
 - **JavaScript**: 14 UDA + 16 puri (4 progettuali)
 - **TypeScript**: 8 UDA + 7 puri (3 progettuali)
-- **React**: 13 UDA + 12 puri (5 progetti finali)
-- **Totale UDA interdisciplinari**: 35/70 (50%)
+- **React**: 12 UDA + 13 puri (5 progetti finali)
+- **Totale UDA interdisciplinari**: 34/70 (49%)
 
-### Distribuzione Materie (35 esercizi UDA)
-- **Fisica**: 10 esercizi (circuiti, moto, grandezze fisiche)
-  - JavaScript: 3 | TypeScript: 3 | React: 4
+### Distribuzione Materie (34 esercizi UDA)
+- **Fisica**: 9 esercizi (circuiti, moto, grandezze fisiche)
+  - JavaScript: 3 | TypeScript: 3 | React: 3
 - **Italiano**: 10 esercizi (analisi testi, opere letterarie)
   - JavaScript: 4 | TypeScript: 2 | React: 4
 - **Storia**: 5 esercizi (timeline, eventi, periodi)
@@ -413,9 +413,9 @@ uda-javascript-informatica/
   - JavaScript: 2 | TypeScript: 1 | React: 2
 
 ### Esercizi Progettuali (12 totali)
-- **JavaScript**: ES16, ES22, ES26, ES30 (4 progetti)
-- **TypeScript**: ES40, ES44, ES45 (3 progetti)
-- **React**: ES66, ES67, ES68, ES69, ES70 (5 progetti completi)
+- **JavaScript**: ES16 (Biblioteca), ES22 (Calc. Fisica), ES26 (Timeline), ES30 (Normative)
+- **TypeScript**: ES40 (Particelle), ES44 (Analizzatore Testi), ES45 (Circuiti)
+- **React**: ES66 (Weather), ES67 (Letterario), ES68 (Task Manager), ES69 (Normative), ES70 (Pomodoro)
 
 ### Progressione Didattica
 1. **JavaScript (30)**: Fondamenti → Controllo flusso → Array → Funzioni → Oggetti → Asincrono

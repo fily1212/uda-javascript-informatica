@@ -1,17 +1,45 @@
-# $(basename "$dir")
+# ES23 - Oggetti Base e Metodi
+
+## 📘 Tipo: PURO
 
 ## 🎯 Obiettivi
-Da completare - Vedere PIANO_UDA_INTERDISCIPLINARE.md per dettagli
+- Creare oggetti (literal, constructor)
+- Aggiungere proprietà e metodi
+- Comprendere `this`
+- Usare metodi oggetto
 
 ## 📚 Teoria
-Da sviluppare
+```javascript
+// Object literal
+const persona = {
+  nome: "Mario",
+  età: 30,
+  saluta() {
+    return `Ciao, sono ${this.nome}`;
+  }
+};
+
+// Constructor function
+function Auto(marca, modello) {
+  this.marca = marca;
+  this.modello = modello;
+  this.descrivi = function() {
+    return `${this.marca} ${this.modello}`;
+  };
+}
+
+const miaAuto = new Auto("Fiat", "500");
+```
 
 ## ✏️ Esercizio
-Vedere piano generale
+1. Crea oggetto `studente` con proprietà e metodi
+2. Constructor `Prodotto` con calcolo prezzo IVA
+3. Oggetto `calcolatrice` con operazioni base
+4. Metodo che accede ad altre proprietà con `this`
 
 ## 💡 Suggerimenti
-- Consulta il piano del corso
-- Vedi esempi esercizi precedenti
+- `this` riferisce all'oggetto
+- Metodi shorthand: `metodo() {}`
+- Proprietà dinamiche: `obj[key]`
 
-## ➡️ Riferimenti
-Vedi PIANO_UDA_INTERDISCIPLINARE.md linee $(grep -n "$(basename $dir | sed 's/es/ES/')" PIANO_UDA_INTERDISCIPLINARE.md | cut -d: -f1 | head -1)
+## ➡️ Prossimo: ES24 - Object Destructuring
